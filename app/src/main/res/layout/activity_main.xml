@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pinkfont"
+    android:backgroundTint="@color/pink"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="412dp"
+        android:layout_height="402dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResult"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_laucher_background" />
+
+    <Button
+        android:id="@+id/btnC"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/pink"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="C"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnModulus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnModulus"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/pink"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="%"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnX"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnX"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="@color/pink"
+        android:layout_marginTop="28dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="X"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnBagi"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnBagi"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:backgroundTint="@color/pink"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="28dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="/"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+
+    <Button
+        android:id="@+id/btnOne"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="6dp"
+        android:backgroundTint="@color/pink"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="1"
+        android:textColor="@color/pinkfont"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnTwo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnC" />
+
+    <Button
+        android:id="@+id/btnTwo"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="@color/pink"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="2"
+        android:textColor="@color/pinkfont"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnThree"
+        app:layout_constraintTop_toBottomOf="@+id/btnModulus" />
+
+    <Button
+        android:id="@+id/btnThree"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="@color/pink"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="3"
+        android:textColor="@color/pinkfont"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnKali"
+        app:layout_constraintTop_toBottomOf="@+id/btnX" />
+
+
+    <Button
+        android:id="@+id/btnKali"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/pink"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="*"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBagi" />
+
+    <Button
+        android:id="@+id/btnFour"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="6dp"
+        android:backgroundTint="@color/pink"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="4"
+        android:textColor="@color/pinkfont"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnFive"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOne" />
+
+    <Button
+        android:id="@+id/btnFive"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="@color/pink"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="5"
+        android:textColor="@color/pinkfont"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnSix"
+        app:layout_constraintTop_toBottomOf="@+id/btnTwo" />
+
+    <Button
+        android:id="@+id/btnSix"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="@color/pink"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="6"
+        android:textColor="@color/pinkfont"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnKali"
+        app:layout_constraintTop_toBottomOf="@+id/btnThree" />
+    <Button
+        android:id="@+id/btnPlus"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/pink"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="+"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnKali" />
+
+    <Button
+        android:id="@+id/btnSeven"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="6dp"
+        android:backgroundTint="@color/pink"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="7"
+        android:textColor="@color/pinkfont"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnEight"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFour" />
+
+    <Button
+        android:id="@+id/btnEight"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="@color/pink"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="8"
+        android:textColor="@color/pinkfont"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnNine"
+        app:layout_constraintTop_toBottomOf="@+id/btnFive"
+        tools:layout_editor_absoluteX="122dp" />
+
+    <Button
+        android:id="@+id/btnNine"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="@color/pink"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="9"
+        android:textColor="@color/pinkfont"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnPlus"
+        app:layout_constraintTop_toBottomOf="@+id/btnSix"/>
+
+    <Button
+        android:id="@+id/btnMinus"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/pink"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="-"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlus" />
+
+    <Button
+        android:id="@+id/btnTitik"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="6dp"
+        android:backgroundTint="@color/pink"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="."
+        android:textColor="@color/pinkfont"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnNull"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSeven" />
+
+    <Button
+        android:id="@+id/btnNull"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="@color/pink"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="0"
+        android:textColor="@color/pinkfont"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnNulll"
+        app:layout_constraintTop_toBottomOf="@+id/btnEight"
+        tools:layout_editor_absoluteX="122dp" />
+
+    <Button
+        android:id="@+id/btnNulll"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="@color/pink"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="000"
+        android:textColor="@color/pinkfont"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnResult"
+        app:layout_constraintTop_toBottomOf="@+id/btnNine"/>
+
+    <Button
+        android:id="@+id/btnResult"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/pink"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="="
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMinus" />
+
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="334dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="32dp"
+        android:text="0"
+        android:textAlignment="viewEnd"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInput" />
+
+    <TextView
+        android:id="@+id/textViewInput"
+        android:layout_width="334dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="52dp"
+        android:text="input"
+        android:textAlignment="textEnd"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
